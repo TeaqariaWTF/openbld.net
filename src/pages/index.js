@@ -16,7 +16,7 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary dark:bg-[#070a11]', styles.heroBanner)}>
+    <header className={clsx('hero hero--primary dark:bg-[#070a11] bg-[#070a11]', styles.heroBanner)}>
         <div className="container mx-auto text-center py-24">
 
             {/*Header title*/}
@@ -51,9 +51,13 @@ function HomepageHeader() {
                     Be yourself, be focused
                 </h2>
                 <p className="mt-1 text-sm text-center text-white dark:text-gray-400">
-                    OpenBLD.net is a service designed to minimize Internet noise such as advertising and tracking, allowing you to be yourself and stay focused while surfing the Internet. And of course you can <a href="/docs/donation" className="mt-5 font-medium text-blue-200 dark:text-blue-500 hover:underline">
-                    Help Us
-                </a>
+                    OpenBLD.net is a service designed to minimize Internet noise such as advertising and tracking,
+                    allowing you to be yourself and stay focused while surfing the Internet. And of course you can help us
+                    with <br/><a href="/docs/donation" className="mt-5 font-medium text-blue-200 dark:text-blue-500 hover:underline">
+                     Donations
+                    </a> or <a href="/docs/sponsorship" className="mt-5 font-medium text-blue-200 dark:text-blue-500 hover:underline">
+                        Sponsorship
+                    </a>.
                 </p>
             </div>
 
@@ -121,7 +125,11 @@ function FeaturesListHeading() {
                                             <svg class="w-3.5 h-3.5 mr-2 mb-3 text-red-500 dark:text-red-500 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                                 <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" fill-rule="evenodd"></path>
                                             </svg>
-                                            <p><a className="text-blue-600 dark:text-blue-500" href="/docs/overwiew/openbld-plus">Get benefits from Donations</a></p>
+                                            <p>
+                                                <a className="text-blue-600 dark:text-blue-500" href="/docs/overwiew/openbld-plus">
+                                                    Get benefits from Donations / Sponsorship
+                                                </a>
+                                            </p>
                                         </li>
                                     </ul>
                                 </div>
@@ -129,7 +137,7 @@ function FeaturesListHeading() {
 
                             {/*OpenBLD logo*/}
                             <div className="w-full md:w-1/2 p-8">
-                                <img className="mx-auto md:mr-0" src="img/site-cover-open-bld-dark.png" alt="OpenBLD.net DNS Site Logo"/>
+                                <img className="mx-auto md:mr-0" src="img/site-cover-openbld-net-dark.png" alt="OpenBLD.net DNS Site Logo"/>
 
                                 {/*Quick setup*/}
                                 <div className="mt-3 block max-w-xl p-6 bg-white border border-gray-200 shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
@@ -213,7 +221,7 @@ function FeaturesListHeading() {
                                             <h3 class="font-heading mb-2 text-xl text-gray-900 font-black">
                                                 Mobile Devices</h3>
                                             <p class="text-sm text-gray-700 font-bold">
-                                                Android, iOS, iPad devices. Setup "Private DNS" on Android <code>ada.openbld.net</code> or <a
+                                                Android, iOS, iPad devices. <a href="/docs/get-started/setup-mobile-devices/android/">Setup</a> "Private DNS" on Android or <a
                                                 href="/docs/get-started/setup-mobile-devices/apple/">download</a> profile for Apple devices.</p>
                                         </div>
                                     </div>

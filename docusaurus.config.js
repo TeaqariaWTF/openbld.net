@@ -101,6 +101,12 @@ const config = {
   // ],
   // stylesheets: ['./css/code-block-buttons.css'],
 
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'ru'],
+    path: 'i18n',
+  },
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -128,6 +134,10 @@ const config = {
           {
             href: 'https://github.com/m0zgen',
             label: 'My GitHub',
+            position: 'right',
+          },
+          {
+            type: 'localeDropdown',
             position: 'right',
           },
         ],
@@ -187,7 +197,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} OpenBLD.net, Built with Docusaurus.`,
+        copyright: `© 2021-${new Date().getFullYear()} OpenBLD.net, Built with Docusaurus.`,
       },
       prism: {
         theme: lightTheme,
